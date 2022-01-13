@@ -27,8 +27,8 @@ main{
 }
 
 .game-quiz-container{
-    width: 80%;
-    height: 86rem;
+    width: 90%;
+    height: 96rem;
     background-image: linear-gradient(to right, #36D1DC, #5B86E5);
     display: flex;
     flex-direction: column;
