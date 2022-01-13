@@ -10,7 +10,7 @@ html, body{
 
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: serif;
 }
 
 main{
@@ -62,7 +62,7 @@ main{
 }
 
 .game-question-container h1{
-    font-size: 4.4rem;
+    font-size: 4.5rem;
     text-align: center;
     padding: 3px;
     color: rgb(250, 198, 86);
