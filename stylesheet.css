@@ -27,8 +27,8 @@ main{
 }
 
 .game-quiz-container{
-    width: 40rem;
-    height: 50rem;
+    width: 75%;
+    height: 75rem;
     background-image: linear-gradient(to right, #36D1DC, #5B86E5);
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ main{
 }
 
 .game-details-container h1{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: 'Courier New', Courier, monospace;
     color:rgb(112, 44, 143);
 }
@@ -62,7 +62,7 @@ main{
 }
 
 .game-question-container h1{
-    font-size: 2.6rem;
+    font-size: 4.2rem;
     text-align: center;
     padding: 3px;
     color: rgb(250, 198, 86);
@@ -72,7 +72,7 @@ main{
 .game-question-container h1:after {
     position: absolute;
     content: '';
-    bottom: -2px;
+    bottom: -8px;
     left: 0px;
     height: 2px;
     width: 0%;
@@ -87,7 +87,7 @@ main{
 
 .game-options-container{
     width: 100%;
-    height: 14rem;
+    height: 25rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -96,7 +96,7 @@ main{
 
 .game-options-container span{
     width: 100%;
-    height: 4rem;
+    height: 8rem;
     margin: 1px;
     background: rgb(32, 216, 216);
     overflow: hidden;
@@ -111,7 +111,8 @@ span label{
     justify-content: center;
     cursor: pointer;
     transition: transform 0.3s;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     color: rgb(255, 255, 255);
     background: linear-gradient(to left, rgb(32, 216, 216) 50%, lightblue 50%) right;
@@ -142,12 +143,12 @@ input[type=radio]:checked ~ .option {
     justify-content: center;
 }
 .next-button-container button{
-    width: 8rem;
-    height: 3rem;
+    width: 9rem;
+    height: 4rem;
     background-color: rgb(81, 26, 231);
     font-family:cursive;
     color:rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
