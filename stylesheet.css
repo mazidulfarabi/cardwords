@@ -112,7 +112,7 @@ span label{
     cursor: pointer;
     transition: transform 0.3s;
     font-size: 2.4rem;
-    font-family: serif;
+    font-family: Tahoma, sans-serif;
     font-weight: 600;
     color: rgb(255, 255, 255);
     background: linear-gradient(to left, rgb(32, 216, 216) 50%, lightblue 50%) right;
