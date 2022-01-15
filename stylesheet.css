@@ -29,13 +29,13 @@ main{
 .game-quiz-container{
     width: 90%;
     height: 96rem;
-    background-image: linear-gradient(to right, #36D1DC, #5B86E5);
+    background-image: linear-gradient(to right, rgba(54, 209, 220, 0.4), rgba(91, 134, 229, 0.5));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 30px;
-    border: 5px solid #0c7a4c;
+    border: 6px solid white;
 }
 
 .game-details-container{
