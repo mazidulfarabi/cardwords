@@ -29,7 +29,7 @@ main{
 .game-quiz-container{
     width: 90%;
     height: 96rem;
-    background-image: linear-gradient(to right, rgba(54, 209, 220, 0.4), rgba(91, 134, 229, 0.5));
+    background-image: linear-gradient(to right, rgba(54, 209, 220, 0.4), rgba(91, 134, 229, 0.3));
     display: flex;
     flex-direction: column;
     align-items: center;
