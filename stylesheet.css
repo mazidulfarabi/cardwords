@@ -47,9 +47,9 @@ main{
 }
 
 .game-details-container h1{
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
-    color:rgb(146, 64, 184);
+    color:rgb(167, 77, 209);
 }
 
 .game-question-container{
