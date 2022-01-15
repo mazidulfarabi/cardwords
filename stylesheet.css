@@ -35,6 +35,7 @@ main{
     align-items: center;
     justify-content: space-around;
     border-radius: 30px;
+    border: 5px solid white;
 }
 
 .game-details-container{
