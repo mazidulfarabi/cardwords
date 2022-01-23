@@ -30,7 +30,7 @@ body {
 
 .kanban__column-title {
 	margin-bottom: 10px;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	user-select: none;
 	font-family: 'Righteous', cursive;
