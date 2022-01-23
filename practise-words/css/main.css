@@ -36,15 +36,7 @@ body {
 	font-family:'Courier New', Courier, monospace;
 	text-decoration: underline;
 	text-align: center;
-	color: white;
-
-	-webkit-text-stroke: 1px rgb(105, 105, 105);
-    text-shadow:
-       3px 3px 0 rgb(105, 105, 105),
-     -1px -1px 0 rgb(105, 105, 105),  
-      1px -1px 0 rgb(105, 105, 105),
-      -1px 1px 0 rgb(105, 105, 105),
-       1px 1px 0 rgb(105, 105, 105);
+	color: rgb(0, 0, 0);
 }
 
 .kanban__item-input {
