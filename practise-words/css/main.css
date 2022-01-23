@@ -5,7 +5,7 @@ html, body {
 body {
 	background-repeat: no-repeat;
   	background-size: cover;
-	background: #009578;
+	background: #34E89EFF;
 }
 
 .kanban {
@@ -13,7 +13,7 @@ body {
 	min-height: 100% !important;
     height: 100%;
 	width: 100%;
-	background: #009578;
+	background: #34E89EFF;
 }
 
 .kanban * {
@@ -34,6 +34,7 @@ body {
 	font-weight: bold;
 	user-select: none;
 	font-family:'Courier New', Courier, monospace;
+	text-decoration: underline;
 	text-align: center;
 	color: white;
 }
