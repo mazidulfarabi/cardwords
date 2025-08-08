@@ -1,9 +1,8 @@
 :root {
-  --primary: #667eea;
-  --secondary: #764ba2;
-  --dark: #333333;
-  --light: #ffffff;
-  --accent: #4facfe;
+  --primary: #FFCE00;
+  --secondary: #FE4880;
+  --dark: #212121;
+  --light: #F3F3F3;
 }
 
 body {
@@ -98,18 +97,18 @@ body {
 }
 
 .flipCard .card .back {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: #ffffff;
+  background: white;
+  color: black;
   transform: rotatey(-180deg);
   -ms-transform: rotatey(-180deg);
   -moz-transform: rotatey(-180deg);
   -webkit-transform: rotatey(-180deg);
   -o-transform: rotatey(-180deg);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-family: Georgia, serif;
+  font-size: 1.5em;
   text-align: center;
   line-height: 1.4;
+  border: 3px solid #f0f0f0;
 }
 
 .flipCard .card .front {
@@ -121,16 +120,16 @@ body {
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
+  color: #FFF;
+  font-family: monospace;
+  font-size: 35px;
+  font-weight: 900;
   text-align: center;
-  line-height: 1.2;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  line-height: 160px;
 }
 
 .flipCard:hover {
@@ -151,6 +150,7 @@ body {
   
   .flipCard .card .front {
     font-size: 1.5rem;
+    line-height: 120px;
   }
   
   .flipCard .card .back {

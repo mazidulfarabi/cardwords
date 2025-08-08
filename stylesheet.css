@@ -9,7 +9,7 @@ html, body{
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: serif;
     background-color: #ffffff;
 }
 
@@ -28,96 +28,81 @@ main{
     width: 90%;
     max-width: 800px;
     min-height: 600px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(to right, rgba(54, 209, 220, 0.4), rgba(91, 134, 229, 0.3));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: 6px solid white;
     padding: 40px 20px;
 }
 
 .game-details-container{
-    width: 100%;
+    width: 80%;
+    height: 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .game-details-container h1{
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
-    font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(81, 26, 231);
 }
 
 .game-question-container{
-    width: 100%;
-    min-height: 120px;
+    width: 80%;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 25px;
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    margin: 20px 0;
-    padding: 20px;
 }
 
 .game-question-container h1{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     text-align: center;
-    color: #ffffff;
-    font-weight: 700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    line-height: 1.2;
+    padding: 3px;
+    color: rgb(250, 198, 86);
+    font-weight: bold;
 }
 
 .game-question-container h1:after {
     position: absolute;
     content: '';
     bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 3px;
+    left: 0px;
+    height: 2px;
     width: 0%;
-    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    background-color: rgb(0, 255, 234);
     animation: underline 2s ease-in-out 2s infinite;
 }
 
 @keyframes underline {
     to {
-        width: 80%;
+        width: 100%;
     }
 }
 
 .game-options-container{
     width: 100%;
+    height: 25rem;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 20px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .game-options-container span{
     width: 100%;
-    min-height: 60px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
+    height: 8rem;
+    margin: 1px;
+    background: rgb(32, 216, 216);
     overflow: hidden;
     text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.game-options-container span:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 span label{
@@ -127,21 +112,19 @@ span label{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    color: #333333;
-    padding: 15px;
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    transition: transform 0.3s;
+    font-size: 2.4rem;
+    font-family: Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left, rgb(32, 216, 216) 50%, lightblue 50%) right;
     background-size: 200%;
-    transition: all 0.3s ease;
+    transition: .5s ease-out;
 }
 
 span label:hover{
-    color: #ffffff;
-    background-position: right;
-    transform: scale(1.02);
+    color: rgb(11, 68, 78);
+    background-position: left;
 }
 
 input[type="radio"] {
@@ -150,185 +133,187 @@ input[type="radio"] {
 }
 
 input[type=radio]:checked ~ .option {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: #ffffff;
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+    background: paleturquoise;
+    color: rgb(11, 68, 78);
 }
 
 .next-button-container{
-    width: 100%;
+    width: 50%;
+    height: 3rem;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .next-button-container button{
-    width: 150px;
-    height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
-    font-size: 1.1rem;
+    width: 10rem;
+    height: 5rem;
+    background-color: rgb(81, 26, 231);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
     font-weight: 600;
-    border: none;
-    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
     cursor: pointer;
     outline: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .next-button-container button:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    border-radius: 10px;
 }
 
 .modal-container{
     display: none;
     position: fixed;
-    z-index: 1000; 
+    z-index: 1; 
     left: 0;
     top: 0;
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    -webkit-animation: fadeIn 0.3s ease-in-out;
-    animation: fadeIn 0.3s ease-in-out;
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 .modal-content-container{
-    max-width: 500px;
-    width: 90%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 70rem;
+    width: 60rem;
+    background-color: rgb(43, 42, 42);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 20px;
-    padding: 40px 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
 }
 
 .modal-content-container h1{
-    font-size: 2rem;
-    color: #ffffff;
+    font-size: 3rem;
+    height: 8rem;
+    color: lightgray;
     text-align: center;
-    margin-bottom: 20px;
-    font-weight: 600;
 }
 
 .grade-details{
-    width: 100%;
+    width: 35rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    margin: 20px 0;
+    justify-content: space-around;
 }
 
 .grade-details p{
-    font-size: 1.2rem;
-    color: #ffffff;
+    font-size: 1.8rem;
+    color: white;
     text-align: center;
-    font-weight: 500;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .modal-button-container{
+    height: 6rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .modal-button-container button{
-    width: 150px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 20rem;
+    height: 6rem;
+    background: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-    font-size: 1.1rem;
+    border: 1px solid rgb(252, 242, 241);
+    color: white;
+    font-size: 1.8rem;
     cursor: pointer;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    font-weight: 600;
+    border-radius: 20px;
 }
 
 .modal-button-container button:hover{
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
+    background-color: rgb(83, 82, 82);
 }
 
 @media(min-width : 300px) and (max-width : 350px){
     .game-quiz-container{
         width: 95%;
+        height: 80vh;
         padding: 20px 10px;
     }
     
     .game-details-container h1{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
  
+    .game-question-container{
+        height: 6rem;
+    }
+    
     .game-question-container h1{
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
  
+    .game-options-container span{
+        width: 90%;
+        height: 2.5rem;
+    }
+    
     .game-options-container span label{
-        font-size: 1rem;
-        padding: 12px;
+        font-size: 0.8rem;
     }
     
     .modal-content-container{
         width: 95%;
-        padding: 30px 20px;
+        height: 25rem;
     }
     
     .modal-content-container h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
 @media(min-width : 350px) and (max-width : 700px){
     .game-quiz-container{
         width: 95%;
+        height: 80vh;
         padding: 30px 15px;
     }
     
     .game-details-container h1{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .game-question-container{
+        height: 8rem;
     }
 
     .game-question-container h1{
-        font-size: 1.8rem;
+        font-size: 0.9rem;
     }
 
-    .game-options-container span label{
-        font-size: 1.1rem;
+    .game-options-container span{
+        width: 90%;
     }
     
     .modal-content-container{
         width: 95%;
-        padding: 30px 20px;
+        height: 25rem;
     }
     
     .modal-content-container h1{
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0; transform: scale(0.9);}
-    to {opacity: 1; transform: scale(1);}
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0; transform: scale(0.9);}
-    to {opacity: 1; transform: scale(1);}
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
